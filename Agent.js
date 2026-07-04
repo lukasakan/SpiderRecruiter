@@ -29,7 +29,6 @@ const Menu3 = () => {
   const menubutton = document.getElementById("menu-button3");
   const closemenu = document.getElementById("close-menu3");
   const menu = document.getElementById("nav-links3");
-  if (!menubutton || !closemenu || !menu) return;
   menubutton.addEventListener("click", () => {
     menu.style.display = "flex";
   });

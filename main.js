@@ -176,7 +176,7 @@ const profiledot = () => {
   const username = localStorage.getItem("username");
   const description = localStorage.getItem("description");
   const radio = localStorage.getItem("radio");
-
+  if (!username || !description || !radio) return;
   dot10.addEventListener("click", () => {
     updateImage(radio);
   });
@@ -205,8 +205,6 @@ const cardArrows = () => {
   const card6 = document.getElementById("Card6");
   const card7 = document.getElementById("Card7");
   const card8 = document.getElementById("Card8");
-
-  if (!arrow1 || !arrow2) return;
 
   const cards = [card1, card2, card3, card4, card5, card6, card7, card8];
   let currentIndex = 0;
