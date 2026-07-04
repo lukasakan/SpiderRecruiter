@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Marvel", sans-serif;
+  background-image: url("assets/spiderbg-dark.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+html {
+  font-size: 10px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+.menu-button {
+  background: none;
+  border: none;
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+.agent-title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Bellefair;
+}
+.nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+
+  background-color: black;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 45%;
+  z-index: 3;
+}
+#close-menu3 {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1%;
+  left: 5%;
+}
+.close-menu {
+  width: 3rem;
+  height: 3rem;
+}
+.black-space {
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0%;
+  left: 55%;
+  bottom: 0%;
+  right: 0%;
+}
+a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+}
+.dark {
+  background-image: url("assets/anti-venombg.svg");
+}
+
+.agent-hero-image {
+  width: 40rem;
+  height: auto;
+  animation: jump 2s ease-in-out infinite;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.agent-hero-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Bellefair;
+  font-weight: 700;
+  filter: drop-shadow(2px 2px black);
+}
+p {
+  font-size: 2rem;
+  backdrop-filter: blur(81.54845428466797px);
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 15px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background: none;
+  }
+  #close-menu3 {
+    display: none;
+  }
+  a {
+    color: white;
+    font-size: 2rem;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 77%;
+  }
+  .black-space {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    width: 40rem;
+    height: 15rem;
+    font-size: 1.7rem;
+    border-radius: 5%;
+  }
+}

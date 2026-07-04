@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Assets/star_logo.png" />
+    <link rel="stylesheet" href="sign-up-style.css" />
+    <title>Sign Up</title>
+    <script src="signup.js" defer></script>
+  </head>
+  <body id="signup-body">
+    <main>
+      <img class="hero-image" src="Assets/Spider_Manb.png" alt="spiderman" />
+
+      <form id="signup_form" action="">
+        <img class="webs" src="Assets/pngegg (3).png" alt="webs" />
+        <div class="message-container">
+          <label for="Username">SpiderName:</label>
+          <div id="username_error" class="username_error"></div>
+        </div>
+        <input
+          id="input-name"
+          class="input"
+          type="text"
+          name="username"
+          placeholder="Enter your username"
+        />
+        <div class="message-container">
+          <label for="email">Email:</label>
+          <div id="email_error" class="email_error"></div>
+        </div>
+        <input
+          id="email"
+          class="input"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <div class="message-container">
+          <label for="password">Password:</label>
+          <div id="password_error" class="password_error"></div>
+        </div>
+        <input
+          id="password"
+          class="input"
+          type="password"
+          name="password"
+          placeholder="Type your password"
+        />
+        <div class="message-container">
+          <label for="description">description:</label>
+          <div id="desc_error" class="desc_error"></div>
+        </div>
+        <textarea
+          id="description"
+          class="description"
+          name="description"
+          placeholder="Tell us about yourself"
+        ></textarea>
+
+        <div class="radios">
+          <img class="pic" src="Assets\costumespider1.svg" alt="profilepic1" />
+          <input id="profile" class="profile" type="radio" name="radio" />
+          <img class="pic" src="Assets\costumespider2.svg" alt="profilepic1" />
+          <input id="profile1" class="profile" type="radio" name="radio" />
+          <img class="pic" src="Assets\costumespider3.svg" alt="profilepic1" />
+          <input id="profile2" class="profile" type="radio" name="radio" />
+        </div>
+        <div id="radio_error" class="radio_error"></div>
+        <button class="signup-button" type="submit">
+          <a id="signup-button">Sign Up</a>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

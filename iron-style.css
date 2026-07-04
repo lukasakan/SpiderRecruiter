@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.light {
+  font-family: "Marvel", sans-serif;
+  background-image: url("assets/iron-spiderbg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f3c75f;
+}
+.dark {
+  font-family: "Marvel", sans-serif;
+  background-image: url("Assets/steel-spiderbg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #c5cad5;
+}
+html {
+  font-size: 10px;
+}
+.lightheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+}
+.darkheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+}
+.iron-spider-logo {
+  width: 5rem;
+  height: 5rem;
+}
+.iron-title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Bellefair;
+}
+.light_nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  background-color: #f3c75f;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 45%;
+  z-index: 3;
+}
+
+.dark_nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+
+  background-color: blue;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 45%;
+  z-index: 3;
+}
+#close-menu2 {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1%;
+  left: 5%;
+}
+.close-menu {
+  width: 3rem;
+  height: 3rem;
+}
+.black-space {
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0%;
+  left: 55%;
+  bottom: 0%;
+  right: 0%;
+}
+.A.lightA {
+  font-style: italic;
+  text-transform: uppercase;
+  color: red;
+  font-size: 3rem;
+  text-decoration: none;
+}
+.A.darkA {
+  font-style: italic;
+  text-transform: uppercase;
+  color: #c5cad5;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.hero-image {
+  width: 40rem;
+  height: 40rem;
+  animation: jump 2s ease-in-out infinite;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.iron-hero-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Bellefair;
+  font-weight: 700;
+  filter: drop-shadow(2px 2px yellow);
+}
+.steel-hero-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Bellefair;
+  font-weight: 700;
+  filter: drop-shadow(2px 2px blue);
+}
+
+p {
+  font-size: 2rem;
+  backdrop-filter: blur(81.54845428466797px);
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 15px;
+  }
+  .menu-button {
+    display: none;
+  }
+  #nav-links2 {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background: none;
+  }
+
+  #close-menu2 {
+    display: none;
+  }
+  .A.lightA {
+    color: #f3c75f;
+    font-size: 2rem;
+  }
+  .A.darkA {
+    color: #c5cad5;
+    font-size: 2rem;
+  }
+  .A.darkA:hover {
+    text-decoration: underline;
+    text-underline-offset: 77%;
+  }
+  .A.lightA:hover {
+    text-decoration: underline;
+    text-underline-offset: 77%;
+  }
+  .black-space {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    width: 40rem;
+    height: auto;
+    font-size: 1.7rem;
+    border-radius: 5%;
+  }
+}
