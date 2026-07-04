@@ -111,12 +111,10 @@ const header = document.getElementById("header");
 const background = document.getElementById("background");
 const saved = localStorage.getItem("theme") || "light";
 document.body.className = saved;
-if (header) {
-  header.className = saved;
-}
-if (background) {
-  background.className = "background " + saved;
-}
+
+header.className = saved;
+
+background.className = "background " + saved;
 
 function toggleTheme() {
   const isDark = document.body.className === "dark";
@@ -126,9 +124,7 @@ function toggleTheme() {
   spiderman();
 }
 
-if (themeButton) {
-  themeButton.addEventListener("click", toggleTheme);
-}
+themeButton.addEventListener("click", toggleTheme);
 
 //this is partially AI
 const spiderman = () => {
@@ -162,7 +158,7 @@ const setingSignUp = () => {
   const username = localStorage.getItem("username");
   const profile = localStorage.getItem("radio");
   if (!username || !profile) return;
-  signup.textContent = localStorage.getItem("username");
+  signup.textContent = username;
   if (profile === "1") profilepic.src = "Assets/costumespider1.svg";
   if (profile === "2") profilepic.src = "Assets/costumespider2.svg";
   if (profile === "3") profilepic.src = "Assets/costumespider3.svg";
