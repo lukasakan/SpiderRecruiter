@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.light {
+.body {
   font-family: "Marvel", sans-serif;
   background-image: url("assets/spiderbg3.svg");
   background-size: cover;
