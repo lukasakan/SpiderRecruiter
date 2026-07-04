@@ -133,6 +133,7 @@ a {
   position: absolute;
   top: 50%;
   right: 90%;
+  z-index: 2;
 }
 .arrow-button2 {
   width: 5rem;
@@ -145,6 +146,7 @@ a {
   position: absolute;
   top: 50%;
   left: 90%;
+  z-index: 2;
 }
 .arrow-button1:hover,
 .arrow-button2:hover {
@@ -243,7 +245,7 @@ a {
   text-shadow:
     0 0 7px #ff6467,
     0 0 9px #007fd7;
-  z-index: 2;
+  z-index: 1;
   top: 50%;
   left: 20%;
 }
