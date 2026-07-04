@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.light {
   font-family: "Marvel", sans-serif;
   background-image: url("assets/spiderbg3.svg");
   background-size: cover;
@@ -21,6 +21,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #e2e2e2;
 }
 
 .logo {
